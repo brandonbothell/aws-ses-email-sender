@@ -1,0 +1,21 @@
+{
+  "name": "email",
+  "packageManager": "yarn@4.14.1",
+  "scripts": {
+    "send:email": "ts-node ./source/index.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-ses": "^3.1032.0",
+    "dotenv": "^17.4.2",
+    "mimetext": "^3.0.28",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "@types/node": "^25.6.0",
+    "eslint": "^10.2.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.58.2"
+  }
+}
