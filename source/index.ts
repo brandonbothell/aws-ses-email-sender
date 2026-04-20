@@ -30,7 +30,7 @@ async function run() {
   const message = createMimeMessage()
   message.setSender(process.env.EMAIL_SENDER)
   message.setRecipient(process.env.EMAIL_RECIPIENT)
-  message.setSubject('My New Email Address!')
+  message.setSubject(process.env.EMAIL_SUBJECT || 'No subject')
   message.addMessage({
     contentType: 'text/html',
     data: emailContent,
